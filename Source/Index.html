@@ -1,41 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> My Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="main">
         <div class="navbar">
-          <img src="logoblacktransparent.png" class="logoblacktransparent" style="width:225px;height:40px;">
-
-           </ul>
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">ABOUT</a></li>
-               <li><a href="#">SKILLS</a></li>
-               <li><a href="#">MY WORKS</a></li>
-               <li><a href="#">CONTACT</a></li>
-            </ul>
+            <img src="Images/logoblacktransparent.png" class="logoblacktransparent" style="width:225px;height:40px;">
         </div>
 
-        <div class="info">
-            <h3>Hi, I'm <span>Paula B. Bigornia</span>.</h3>
-            <h1><span>Artist</span></h1>
-            <h3>A 3rd Year BSIT-ANIMATION STUDENT.</h3>
+        <!-- Profile Section -->
+        <div class="profile-section text-center my-5">
+            <img src="Images/me.jpg" alt="My Picture" class="profile-picture">
+            <div class="profile-name">Hi! </div>
+            <div class="profile-description">I'm Paula B. Bigornia also known as Plune. A Third-year student in the Bachelor of Science in Information Technology (BSIT) with a focus on Animation. I am passionate about what I do, and here’s a glimpse of my work! („• ֊ •„)</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/TooooTheeeeMOOOONNN" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/Pluneee" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- My Works -->
+        <div class="carousel-container my-5">
+            <h2 class="text-center">My Works</h2>
+            <div class="gallery my-5">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <img src="Images/girl wi umb.png" class="gallery-thumbnail" alt="Sample 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Nymph" data-description="I love playing with colors; I had fun rendering this one. My friends say that it reminded them of Thumbelina, but it was just a random piece of art. ^ᴗ^." data-image="Images/girl wi umb.png">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/fae33.png" class="gallery-thumbnail" alt="Sample 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Faee" data-description="One of my favorite artworks has received a lot of compliments on how I made the wings. At first, I was a little indecisive about how it should look and the theme of what I was creating, but I always end up adding things that are not relevant or don't fit well. However, that’s the point of making art—it doesn’t have to make sense! ヾ( ˃ᴗ˂ )◞ • *✰ ." data-image="Images/fae33.png">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/gab without.png" class="gallery-thumbnail" alt="Sample 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Gabby" data-description="My reference for this art is my niece; I find her pictures very inspiring. They are the kind of pictures that make an artist want to draw" data-image="Images/gab without.png">
+                    </div>
+                     <div class="col-auto">
+                        <img src="Images/s.png" class="gallery-thumbnail" alt="Sample 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Santana" data-description="Another random art! My favorite part of creating this one is the details. Though it's time-consuming, I find it fun." data-image="Images/s.png">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/Illustration.png" class="gallery-thumbnail" alt="Sample 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Villain Character" data-description="This was actually a trend on Facebook where users created a villain, and the first to eighth commenters had to decide the hair, body type, clothes, or character the artist should depict. I had fun making it; although it was a little pressuring, I finished this artwork early and love how the crow turned out!." data-image="Images/Illustration.png">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/Puccaa.png" class="gallery-thumbnail" alt="Sample 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Pucca" data-description="Pucca is one of my favorite character, if were to cosplay her i would i just love her personality and i made a fan art of her." data-image="Images/Puccaa.png">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/Shego.jpg" class="gallery-thumbnail" alt="Sample 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Shego" data-description="Another favorite character that I made a fan art of! I'm somewhat not satisfied with it, and I don't think finishing it would make it more pleasing. Sometimes, there are artworks that feel unfinished, yet they can still be complete. No need for perfect rendering; sometimes, being unfinished makes an artist feel content." data-image="Images/Shego.jpg">
+                    </div>
+                    <div class="col-auto">
+                        <img src="Images/Daki.png" class="gallery-thumbnail" alt="Sample 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-title="Daki" data-description="Daki from demon slayer i just love every details of her, and her character." data-image="Images/Daki.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="image">
-            <img src="m.jpg" class="m.jpg">
-        </div>
-
-        <div class="icons">
-            <a href="#"><ion-icon name="logo-Facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-Instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-Twitter"></ion-icon></a>
-        </div>
+       <!-- Forever Wips -->
+       <h1 class="text-center">Forever Wips</h1>
+       <div class="stacked-images">
+        <img src="Images/m.jpg" class="stacked-image" alt="Image 1">
+        <img src="Images/rosalee.jpg" class="stacked-image" alt="Image 2">
+        <img src="Images/Illustration4.jpg" class="stacked-image" alt="Image 3">
+        <img src="Images/Illustration5.jpg" class="stacked-image" alt="Image 4">
+        <img src="Images/yeyeye.jpg" class="stacked-image" alt="Image 5">
+        <img src="Images/fairy.jpg" class="stacked-image" alt="Image 6">
     </div>
     
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</div> 
+      <div class="carousel-container my-5">
+    <h2>3D Works</h2>
+    <div id="threeDCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Video Item -->
+            <div class="carousel-item active">
+                <video class="carousel-img" controls>
+                    <source src="BIGORNIA_UrbanSetting.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <!-- Second Video Item -->
+            <div class="carousel-item">
+                <video class="carousel-img" controls>
+                    <source src="1016(4).mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+             <!-- Third Video Item -->
+             <div class="carousel-item">
+                <video class="carousel-img" controls>
+                    <source src="BIGORNIA_LipSync.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#threeDCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#threeDCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+        <!-- Modal for Gallery -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+                            <!-- Image Section -->
+                            <div class="col-md-6">
+                                <img src="" id="modalImage" class="modal-img img-fluid rounded" alt="Selected Image">
+                            </div>
+                            <!-- Title and Description Section -->
+                            <div class="col-md-6">
+                                <h3 id="modalTitle" class="mb-3">Title</h3>
+                                <p id="modalDescription">Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- Contact Section -->
+<div class="contact-section text-center my-5">
+    <h3>Contact Me</h3>
+    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pbigornia9@gmail.com">pbigornia9@gmail.com</a></p>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS for Modal -->
+    <script>
+        // Attach click event to gallery thumbnails
+        document.querySelectorAll('.gallery-thumbnail').forEach(item => {
+            item.addEventListener('click', function () {
+                const title = this.getAttribute('data-title');
+                const description = this.getAttribute('data-description');
+                const image = this.getAttribute('data-image');
+
+                // Populate modal content
+                document.getElementById('modalTitle').textContent = title;
+                document.getElementById('modalDescription').textContent = description;
+                document.getElementById('modalImage').src = image;
+            });
+        });
+    </script>
 </body>
 </html>
