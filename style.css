@@ -1,0 +1,227 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8; /* Improved readability */
+    background-color: #faf8fa; /* Light background */
+    background-image: url('Images/Pinkbg.png'); /* Background image */
+    background-position: center;
+    background-size: cover;
+}
+
+/* Main Container */
+.main {
+    width: 100%;
+    background-image: url('Images/Pinkbg.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Navbar */
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar img {
+    max-height: 50px;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin: 50px auto;
+    color: #333;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.profile-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Stacked Images in Grid Layout */
+.stacked-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 5px; /* Space between images */
+    justify-items: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    margin-top: 50px;
+    width: 100%; /* Full container width */
+}
+
+.stacked-image {
+    width: 90%; /* Adjust width as needed */
+    max-width: 400px; /* Restrict maximum width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    object-fit: cover; /* Ensure proper scaling */
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.carousel-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a172e;
+}
+
+
+/* Carousel Video */
+.carousel-video {
+    width: 700%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Caption */
+.carousel-caption {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Carousel Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #3a172e;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #555;
+}
+
+/* Images in Gallery */
+.gallery-thumbnail {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styling */
+.modal-img {
+    max-height: 100%;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+#modalTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#modalDescription {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styling */
+.btn-secondary {
+    background-color: #007bff;
+    border: none;
+    color: #3a172e;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #f5f7f8;
+}
+
+/* Mailto Links */
+a[href^="mailto:"] {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a[href^="mailto:"]:hover {
+    color: #f3f3f3;
+}
